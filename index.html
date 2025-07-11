@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inchara Chetan's Personal Website</title>
+    <link rel="icon" href="https://incharachetan.github.io/sparkling_heart.ico" type="image/x-icon" />
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: sans-serif, -apple-system, BlinkMacSystemFont;
+      }
+
+      .content-wrapper {
+        max-width: 750px;
+        margin: 50px auto;
+        padding: 0 30px;
+        padding-bottom: 70px;
+        margin-top: 20px;
+      }
+
+      h1 {
+        color: #f64a8a;
+        text-align: center;
+        font-size: 2.8em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: left;
+        font-size: 1em;
+        color: #666;
+      }
+
+      .highlight1 {
+        font-weight: bold;
+        color: #666;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight {
+        color: #ff0a54;
+        font-weight: bold;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight2 {
+        font-weight: bold;
+        color: #b57edc;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight3 {
+        font-weight: bold;
+        color: #f7c319;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight4 {
+        font-weight: bold;
+        color: #d21f3c;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight5 {
+        font-weight: bold;
+        color: #729a6e;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight6 {
+        font-weight: bold;
+        color: #2b537e;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight7 {
+        font-weight: bold;
+        color: #648dca;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight8 {
+        font-weight: bold;
+        color: #7f4ca5;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight9 {
+        font-weight: bold;
+        color: #679267;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight10 {
+        font-weight: bold;
+        color: #0a66c2;
+        text-decoration: none;
+        transition: text-shadow 0.3s ease;
+      }
+
+      .highlight:hover {
+        text-shadow: 0 0 10px rgba(230, 62, 140, 0.5);
+      }
+
+      .small-text {
+        text-align: center;
+        font-size: 0.8em;
+        color: #222;
+        margin-top: 50px;
+      }
+
+      .typing-animation::after {
+        color: #fff;
+        animation: blink-caret 1.4s step-end infinite;
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          opacity: 1;
+        }
+        90% {
+          opacity: 0;
+        }
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        padding-top: 80px;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: #f64a8a;
+        font-weight: bold;
+        margin: 0 15px;
+        font-size: 1em;
+        transition: text-shadow 0.3s ease;
+  
+      }
+
+      .nav-link:hover {
+        text-shadow: 0 0 10px rgba(230, 62, 140, 0.5);
+      }
+
+      .infinite-text {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      background: #fff0f5;
+      color: #567c8d;
+      font-weight: bold;
+      padding: 8px 0;
+      font-size: 1em;
+      position: relative;
+    }
+
+    .infinite-text span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 25s linear infinite;
+      word-spacing: 20px;
+      letter-spacing: 1px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="infinite-text" style="position: fixed; top: 0; width: 100%; z-index: 1001;">
+      <span>Student &nbsp;&nbsp;&nbsp;Developer &nbsp;&nbsp;&nbsp;Engineer &nbsp;&nbsp;&nbsp;Innovator &nbsp;&nbsp;&nbsp; Researcher &nbsp;&nbsp;&nbsp; Designer &nbsp;&nbsp;&nbsp; Leader</span>
+    </div>
+
+  <nav style="position: fixed; top: 32px; width: 100%; padding: 15px 0; text-align: center; z-index: 1000; background: #fff;">
+      <a href="#about" class="nav-link">About Me</a> 
+      <a href="#experience" class="nav-link">Experience</a> 
+      <a href="#activities" class="nav-link">Activities</a>
+      <a href="#contact" class="nav-link">Contact Me</a>
+    </nav>
+
+
+    <div class="content-wrapper">
+      <h1>
+        <span class="typing-animation"></span>
+      </h1>
+      <p id="about">
+        I am a rising junior studying
+        <span class="highlight1">computer science</span>
+        at the
+        <a href="https://www.cs.washington.edu" target="_blank" class="highlight2">University of Washington's Paul G. Allen School of Computer Science & Engineering</a> 
+        with minors in <span class="highlight1">data science and business</span> 👩‍💻. I am extremely passionate about
+        building equitable, cutting-edge, and impactful technologies that combat complex problems. 
+        This passion has driven me to explore various areas of computing from 
+        <span class="highlight1">robotics 🤖</span> to 
+        <span class="highlight1">data science 📈</span> to 
+        <span class="highlight1">software engineering 💻</span>.
+        Through my academic coursework, internships, research, and personal projects, I have developed proficiency in various programming languages including 
+        <span class="highlight1">Java, Python, SQL, HTML, CSS, and JavaScript/TypeScript</span>.
+      </p>
+
+      <h3 id="experience" style="color: #f64a8a; font-size: 1.3em; text-align: center;">Experience</h3>
+
+      <p>
+        Throughout my sophomore year, I was a <span class="highlight1">software engineering intern</span> at <span class="highlight5">Marseer AI</span>,
+        an AI-based product review aggregator startup 🛍️. In this role, I developed asynchronous, API-based web scraping pipelines to extract and structure data from fashion e-commerce websites 
+        to be fed to large language models for product analysis.
+      </p>
+
+      <p>
+        I am also an <span class="highlight1">undergraduate research assistant</span> at the <span class="highlight8">University of Washington School of Medicine's Soetedjo and Kojima Lab</span> 🏥. 
+        I am helping create a virtual reality headset to investigate how healthy individuals can learn covert saccades to help patients with vestibular disorder regain stable vision during head movement.
+      </p>
+
+      <p>
+        This summer, I am a <span class="highlight1">software engineering intern</span> at <a href="https://www.theclearinghouse.org" target="_blank" class="highlight6">The Clearing House</a>,
+        a banking association and payments company owned by the largest commercial banks 🏦. My project involves adding new features to the <a href="https://www.theclearinghouse.org/payment-systems/CHIPS target=" target=_blank class="highlight7">Clearing House Interbank Payment System (CHIPS)</a>
+         AWS business intelligence data pipeline and data lake to support more advanced and insightful data analysis.
+      </p>
+
+      
+      
+      <h3 id="activities" style="color: #f64a8a; font-size: 1.3em; text-align: center;">Activities</h3>
+
+  
+      <p>
+        I am an active member of <a href="https://www.instagram.com/akpsiuw/?hl=en" target="_blank" class="highlight3">Alpha Kappa Psi</a>, a professional business fraternity 💼. 
+        Last school year, I held a role on the Rho Innovate (Entrepreneurship) committee as a <span class="highlight1">front-end developer</span>, where I collaborated with others who share my passion for entrepreneurship and 
+        innovation to develop a cross-platform sports matchmaking application.  
+      </p>
+
+      <p>
+        Throughout high school, I served as <span class="highlight1">captain and lead programmer</span> of a <a href="https://www.bothellrobotics.com/robotics-team/ftc-robotics-team" target="_blank" class="highlight4">First Tech Challange robotics team</a> ⚙️.
+        I guided a team that designed, engineered, and programmed three Java-based autonomous and driver-controlled competition robots.
+        
+      </p>
+
+      <h3 id="contact" style="color: #f64a8a; font-size: 1.3em; text-align: center;">Contact Me</h3>
+
+      <p > 
+        Please don't hesitate to reach out to me if you share similar interests or have exciting opportunities to discuss via
+        <a href="mailto:incharac@uw.edu" class="highlight9">email</a> or
+        <a
+          href="https://www.linkedin.com/in/incharachetan/"
+          target="_blank"
+          class="highlight10"
+          >linkedin</a 
+        >! 🙂
+      </p>
+    </div>
+
+    <script>
+      const text = "Hi, I'm Inchara Chetan!";
+      const typingSpan = document.querySelector(".typing-animation");
+      let i = 0;
+
+      function typeWriter() {
+        if (i < text.length) {
+          typingSpan.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, Math.random() + 90);
+        }
+      }
+
+      typeWriter();
+    </script>
+  </body>
