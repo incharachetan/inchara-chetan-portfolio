@@ -189,9 +189,21 @@
       }
       100% {
         transform: translateX(-100%);
-      }
-}
+    }
 
+ 
+    }
+
+    #typed-text::after {
+    content: "|";
+    animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+    }
 
     </style>
   </head>
@@ -210,9 +222,8 @@
 
 
     <div class="content-wrapper">
-      <h1>
-        <span class="typing-animation"></span>
-      </h1>
+    <h1 id="typed-text"></h1>
+
       <p id="about">
         I am a rising junior studying
         <span class="highlight1">computer science</span>
@@ -225,7 +236,7 @@
         <span class="highlight1">data science 📈</span> to 
         <span class="highlight1">software engineering 💻</span>.
         Through my academic coursework, internships, research, and personal projects, I have developed proficiency in various programming languages including 
-        <span class="highlight1">Java, Python, SQL, HTML, CSS, and JavaScript/TypeScript</span>.
+        <span class="highlight1">Java, Python, SQL, HTML, CSS, and JavaScript/TypeScript</span>, but I am always eager to learn new languages and technologies!
       </p>
 
       <h3 id="experience" style="color: #f64a8a; font-size: 1.3em; text-align: center;">Experience</h3>
@@ -261,7 +272,6 @@
       <p>
         Throughout high school, I served as <span class="highlight1">captain and lead programmer</span> of a <a href="https://www.bothellrobotics.com/robotics-team/ftc-robotics-team" target="_blank" class="highlight4">First Tech Challange robotics team</a> ⚙️.
         I guided a team that designed, engineered, and programmed three Java-based autonomous and driver-controlled competition robots.
-        
       </p>
 
       <h3 id="contact" style="color: #f64a8a; font-size: 1.3em; text-align: center;">Contact Me</h3>
@@ -279,18 +289,19 @@
     </div>
 
     <script>
-      const text = "Hi, I'm Inchara Chetan!";
-      const typingSpan = document.querySelector(".typing-animation");
-      let i = 0;
+    const text = "Hi, I'm Inchara Chetan!";
+    const target = document.getElementById("typed-text");
+    let index = 0;
 
-      function typeWriter() {
-        if (i < text.length) {
-          typingSpan.textContent += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, Math.random() + 90);
+    function typeWriter() {
+        if (index < text.length) {
+        target.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 90); // Delay between each letter
         }
-      }
+    }
 
-      typeWriter();
+    window.onload = typeWriter;
     </script>
+
   </body>
